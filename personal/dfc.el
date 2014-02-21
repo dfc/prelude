@@ -1,4 +1,5 @@
-(prelude-require-packages '(markdown-mode smartparens))
+;;(prelude-require-packages '(markdown-mode smartparens))
+(prelude-require-packages '(markdown-mode writegood-mode smartparens))
 
 (require 'smartparens-config)
 
@@ -12,3 +13,9 @@
 
 (add-hook 'markdown-mode-hook 'turn-on-visual-line-mode) ;; sane text handling for markdown
 (add-hook 'markdown-mode-hook 'turn-on-smartparens-mode) ;; sane text handling for markdown
+
+
+
+
+(require 'writegood-mode)
+(global-set-key "\C-cg" 'writegood-mode)

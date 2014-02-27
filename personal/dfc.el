@@ -1,7 +1,10 @@
 ;;(prelude-require-packages '(markdown-mode smartparens))
-(prelude-require-packages '(markdown-mode writegood-mode smartparens))
+(prelude-require-packages '(markdown-mode writegood-mode smartparens pandoc-mode rst writegood-mode))
 
 (require 'smartparens-config)
+
+(setq guru-warn-only t)
+
 
 (autoload 'markdown-mode "markdown-mode"
    "Major mode for editing Markdown files" t)
@@ -14,6 +17,13 @@
 (add-hook 'markdown-mode-hook 'turn-on-visual-line-mode) ;; sane text handling for markdown
 (add-hook 'markdown-mode-hook 'turn-on-smartparens-mode) ;; sane text handling for markdown
 
+
+
+(require 'rst)
+
+(setq auto-mode-alist
+      (append '(("\\.rst\\'" . rst-mode)
+                ("\\.rest\\'" . rst-mode)) auto-mode-alist))
 
 
 

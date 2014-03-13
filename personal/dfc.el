@@ -1,5 +1,12 @@
+;; 
+(setq gc-cons-threshold 8000000)
+(setq  garbage-collection-messages t)
+
 ;;(prelude-require-packages '(markdown-mode smartparens))
-(prelude-require-packages '(markdown-mode writegood-mode smartparens pandoc-mode rst writegood-mode))
+(prelude-require-packages '(markdown-mode writegood-mode smartparens pandoc-mode rst writegood-mode ess))
+
+
+
 
 (require 'smartparens-config)
 
@@ -18,6 +25,7 @@
 (add-hook 'markdown-mode-hook 'turn-on-smartparens-mode) ;; sane text handling for markdown
 
 
+(require 'ess-site)
 
 (require 'rst)
 
@@ -29,3 +37,5 @@
 
 (require 'writegood-mode)
 (global-set-key "\C-cg" 'writegood-mode)
+
+

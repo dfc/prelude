@@ -1,9 +1,14 @@
+;; Emacs resources:
+;; from: https://raw.githubusercontent.com/avar/dotemacs/master/.emacs
+;; http://web.archive.org/web/20111127230153/http://stackoverflow.com/questions/60367/the-single-most-useful-emacs-feature
+;; http://news.ycombinator.com/item?id=3320198
 ;; 
-(setq gc-cons-threshold 8000000)
-(setq  garbage-collection-messages t)
+
+
+ 
 
 ;;(prelude-require-packages '(markdown-mode smartparens))
-(prelude-require-packages '(markdown-mode writegood-mode smartparens pandoc-mode rst writegood-mode ess))
+(prelude-require-packages '(markdown-mode writegood-mode smartparens pandoc-mode rst writegood-mode ess undo-tree))
 
 
 
@@ -39,3 +44,6 @@
 (global-set-key "\C-cg" 'writegood-mode)
 
 
+
+(require 'undo-tree)
+(global-undo-tree-mode 1)

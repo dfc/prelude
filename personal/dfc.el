@@ -1,11 +1,11 @@
 ;; Emacs resources:
 ;; from: https://raw.githubusercontent.com/avar/dotemacs/master/.emacs
-;; http://web.archive.org/web/20111127230153/http://stackoverflow.com/questions/60367/the-single-most-useful-emacs-feature
-;; http://news.ycombinator.com/item?id=3320198
-;; 
+;;  http://web.archive.org/web/20111127230153/http://stackoverflow.com/questions/60367/the-single-most-useful-emacs-feature
+;;  http://news.ycombinator.com/item?id=3320198
+;; https://github.com/larstvei/dot-emacs
 
 
- 
+(add-to-list 'package-archives '("org" . "http://orgmode.org/elpa/") t) 
 
 ;;(prelude-require-packages '(markdown-mode smartparens))
 (prelude-require-packages '(markdown-mode writegood-mode smartparens pandoc-mode rst writegood-mode ess undo-tree))

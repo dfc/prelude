@@ -8,7 +8,7 @@
 (add-to-list 'package-archives '("org" . "http://orgmode.org/elpa/") t) 
 
 ;;(prelude-require-packages '(markdown-mode smartparens))
-(prelude-require-packages '(markdown-mode writegood-mode smartparens pandoc-mode rst writegood-mode ess undo-tree))
+(prelude-require-packages '(markdown-mode writegood-mode smartparens editorconfig pandoc-mode rst writegood-mode ess undo-tree))
 
 
 

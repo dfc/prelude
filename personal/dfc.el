@@ -60,3 +60,7 @@
   kept-new-versions 20   ; how many of the newest versions to keep
   kept-old-versions 5    ; and how many of the old
   )
+
+
+;;(set-default-font "Source Code Pro-14")
+(set-default-font "Ubuntu Mono-13")

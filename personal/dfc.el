@@ -4,22 +4,14 @@
 ;;  http://news.ycombinator.com/item?id=3320198
 ;; https://github.com/larstvei/dot-emacs
 
-
 (add-to-list 'package-archives '("org" . "http://orgmode.org/elpa/") t) 
 
 ;;(prelude-require-packages '(markdown-mode smartparens))
 (prelude-require-packages '(markdown-mode writegood-mode smartparens editorconfig pandoc-mode rst writegood-mode ess undo-tree))
 
-
-
-
-
-
-
 (require 'smartparens-config)
 
 (setq guru-warn-only t)
-
 
 (autoload 'markdown-mode "markdown-mode"
    "Major mode for editing Markdown files" t)
@@ -31,10 +23,6 @@
 
 (add-hook 'markdown-mode-hook 'turn-on-visual-line-mode) ;; sane text handling for markdown
 (add-hook 'markdown-mode-hook 'turn-on-smartparens-mode) ;; sane text handling for markdown
-
-
-
-(require 'rst)
 
 (setq auto-mode-alist
       (append '(("\\.rst\\'" . rst-mode)
@@ -64,3 +52,6 @@
 
 ;;(set-default-font "Source Code Pro-14")
 (set-default-font "Ubuntu Mono-13")
+
+
+(setq prelude-theme 'monokai)
